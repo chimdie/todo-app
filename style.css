@@ -1,0 +1,167 @@
+:root{
+    --white: #fff;
+    --radius: .20rem;
+    --trans: all 1s ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{ 
+    min-height: 80vh;
+    font-family: "Open Sans", sans-serif;
+    background-color: #1d1b1b;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    color: #08083f
+}
+
+header{
+    color: var(--white);
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+form{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+form > input{
+    padding: .50rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: none;
+    max-width: 250px;
+    /* min-width: 40%; */
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+form > button{
+    padding: .50rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    /* background-color: royalblue; */
+    background: black;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    color: var(--white);
+    border: none;
+}
+
+form > button:hover{
+    background-color: var(--white);
+    /* color: royalblue; */
+    color: black;
+    transition: var(--trans);
+}
+
+.todo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    margin: 1rem;
+    min-width: 80%;
+}
+
+.todoDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .10rem;
+    margin: .15rem;
+}
+
+.todoList{
+    padding: .50rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid black;
+    width: 12.5rem;
+    background: azure;
+    border: none;
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+.markBtn{
+    background: #13c913;
+    padding: var(--radius) .50rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    border: none;
+    color: var(--white);
+}
+
+.markBtn:hover{
+    color: #13c913;
+    background: var(--white);
+    transition: var(--trans);
+}
+
+.delBtn{
+    background: #df1515;
+    padding: var(--radius);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: var(--white);
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.delBtn:hover{
+    color: #df1515;
+    background-color: var(--white);
+    transition: var(--trans);
+}
+
+.blur{
+    opacity: .5;
+    /* text-decoration: line-through; */
+}
+
+
+.del{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+    to {
+        margin-left: 100%;
+        width: 300%; 
+    }
+}
+
+
+
+@media screen and (min-width: 400px){
+    form > input{
+        padding: .50rem;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        border: none;
+        max-width: 600px;
+    }
+    
+}

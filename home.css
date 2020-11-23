@@ -1,0 +1,56 @@
+:root{
+    --gold: #fad520;
+    --white: #fff;
+    --black: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{ 
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    background-color: #1d1b1b;
+}
+
+header{
+    color: var(--gold);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    padding: 1rem;
+    background-color: #111010;
+}
+
+header > h3{
+    /* padding-left: 4rem; */
+}
+
+button{
+    background-color: inherit;
+    border: none;
+    padding: .50rem;
+}
+
+a button.new{
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: bold;
+    /* display: none; */
+}
+
+ .del{
+    display: none;
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: inherit;
+    border: none;
+    padding: .50rem;
+}
